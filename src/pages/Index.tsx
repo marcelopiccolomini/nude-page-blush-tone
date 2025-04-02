@@ -209,8 +209,8 @@ const Index = () => {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {/* Basic Product */}
-          <div className="rounded-lg overflow-hidden bg-nude-accent shadow-md">
-            <div className="p-4 text-center relative">
+          <div className="rounded-lg overflow-hidden bg-nude-accent shadow-md flex flex-col">
+            <div className="p-4 text-center relative flex-1 flex flex-col">
               <div className="absolute top-2 right-2">
                 <span className="text-nude-600 text-xl">👑</span>
               </div>
@@ -219,19 +219,21 @@ const Index = () => {
                 <p className="text-sm">De:R$97,30 por</p>
                 <p className="text-xl font-bold text-nude-600">R$19,90</p>
               </div>
-              <div className="text-left space-y-2 my-4">
+              <div className="text-left space-y-2 my-4 flex-1">
                 <p className="text-sm flex items-center">
                   <CheckIcon className="text-green-500 h-4 w-4 mr-2" />
                   Manual Completo: De filhos birrentos a Crianças Tranquilas
                 </p>
               </div>
-              <button className="btn-primary w-full mt-4">EU QUERO AGORA</button>
+              <div className="mt-auto">
+                <button className="btn-primary w-full">EU QUERO AGORA</button>
+              </div>
             </div>
           </div>
 
           {/* Premium Product */}
-          <div className="rounded-lg overflow-hidden bg-nude-accent shadow-md">
-            <div className="p-4 text-center relative">
+          <div className="rounded-lg overflow-hidden bg-nude-accent shadow-md flex flex-col">
+            <div className="p-4 text-center relative flex-1 flex flex-col">
               <div className="absolute top-2 right-2">
                 <span className="text-nude-600 text-xl">👑</span>
               </div>
@@ -240,7 +242,7 @@ const Index = () => {
                 <p className="text-sm">De:R$197,30 por</p>
                 <p className="text-xl font-bold text-nude-600">R$37,90</p>
               </div>
-              <div className="text-left space-y-2 my-4">
+              <div className="text-left space-y-2 my-4 flex-1">
                 <p className="text-sm flex items-center">
                   <CheckIcon className="text-green-500 h-4 w-4 mr-2" />
                   Manual Completo: De filhos birrentos a Crianças Tranquilas
@@ -258,7 +260,9 @@ const Index = () => {
                   Grupo fechado no WhatsApp para suporte exclusivo
                 </p>
               </div>
-              <button className="btn-primary w-full mt-4">EU QUERO AGORA</button>
+              <div className="mt-auto">
+                <button className="btn-primary w-full">EU QUERO AGORA</button>
+              </div>
             </div>
           </div>
         </div>
